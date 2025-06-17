@@ -1,0 +1,1054 @@
+/* Admin Panel Styles */
+.wrap[dir="rtl"] {
+    margin: 20px;
+}
+
+/* Card Styles */
+.card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.card h2 {
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Form Styles */
+.form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+}
+
+.form-table td {
+    padding: 15px 10px;
+}
+
+.form-table input[type="text"],
+.form-table select,
+.form-table textarea {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Attribute Terms Styles */
+.attribute-terms {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #e2e4e7;
+}
+
+.attribute-terms li {
+    margin-bottom: 5px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.attribute-terms li:before {
+    content: "•";
+    position: absolute;
+    right: 0;
+    color: #3498db;
+}
+
+/* Questions Table Styles */
+.wp-list-table {
+    margin-top: 20px;
+}
+
+.wp-list-table th {
+    font-weight: 600;
+}
+
+.wp-list-table td {
+    vertical-align: middle;
+}
+
+.wp-list-table .column-actions {
+    width: 150px;
+    text-align: left;
+}
+
+/* Drag Handle */
+.drag-handle {
+    cursor: move;
+    color: #999;
+    padding: 0 5px;
+}
+
+.drag-handle:hover {
+    color: #333;
+}
+
+/* Buttons */
+.button {
+    margin: 0 5px;
+}
+
+.button-primary {
+    margin-right: 0;
+}
+
+/* Notices */
+.notice {
+    margin: 15px 0;
+}
+
+/* Tooltips */
+.tooltipster-light {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tooltipster-light .tooltipster-content {
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 8px 10px;
+    color: #333;
+}
+
+/* Loading States */
+.loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.loading:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error States */
+.has-error input,
+.has-error select,
+.has-error textarea {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Success States */
+.has-success input,
+.has-success select,
+.has-success textarea {
+    border-color: #28a745;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 782px) {
+    .form-table th {
+        width: auto;
+        padding: 10px 0;
+    }
+    
+    .form-table td {
+        padding: 10px 0;
+    }
+    
+    .form-table input[type="text"],
+    .form-table select,
+    .form-table textarea {
+        max-width: 100%;
+    }
+    
+    .wp-list-table .column-actions {
+        width: auto;
+    }
+    
+    .button {
+        margin: 5px 0;
+    }
+}
+
+.perfume-advisor-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.perfume-advisor-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.perfume-advisor-header h1 {
+    margin: 0;
+    color: #23282d;
+}
+
+.perfume-advisor-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #23282d;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group select[multiple] {
+    height: 150px;
+}
+
+.form-group .description {
+    color: #666;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.attribute-row,
+.terms-row,
+.products-row {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.select2-container {
+    width: 100% !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 2px 6px;
+    margin: 2px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    margin-right: 5px;
+    color: #999;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    color: #23282d;
+}
+
+.wp-list-table .column-actions {
+    width: 15%;
+}
+
+.wp-list-table .column-actions .button {
+    margin-right: 5px;
+}
+
+/* Tooltipster customization */
+.tooltipster-light {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tooltipster-light .tooltipster-content {
+    color: #666;
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.perfume-advisor-help {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.perfume-advisor-help .help-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.perfume-advisor-help .help-section h2 {
+    margin: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    background: #f8f8f8;
+    color: #23282d;
+    font-size: 1.3em;
+}
+
+.perfume-advisor-help .help-content {
+    padding: 20px;
+}
+
+.perfume-advisor-help .help-content h3 {
+    margin: 1.5em 0 0.8em;
+    color: #23282d;
+    font-size: 1.2em;
+}
+
+.perfume-advisor-help .help-content h3:first-child {
+    margin-top: 0;
+}
+
+.perfume-advisor-help .help-content p {
+    margin: 0 0 1em;
+    line-height: 1.6;
+}
+
+.perfume-advisor-help .help-content ul,
+.perfume-advisor-help .help-content ol {
+    margin: 0 0 1em 1.5em;
+    line-height: 1.6;
+}
+
+.perfume-advisor-help .help-content li {
+    margin-bottom: 0.5em;
+}
+
+.perfume-advisor-help .help-content code {
+    background: #f8f8f8;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.9em;
+}
+
+.perfume-advisor-help .help-content strong {
+    color: #23282d;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 782px) {
+    .perfume-advisor-help .help-section h2 {
+        font-size: 1.1em;
+        padding: 12px 15px;
+    }
+    
+    .perfume-advisor-help .help-content {
+        padding: 15px;
+    }
+    
+    .perfume-advisor-help .help-content h3 {
+        font-size: 1.1em;
+    }
+}
+
+.perfume-advisor-dashboard {
+    margin-top: 20px;
+}
+
+.dashboard-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.dashboard-section h2 {
+    margin: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    background: #f8f8f8;
+    color: #23282d;
+    font-size: 1.3em;
+}
+
+.dashboard-section > div {
+    padding: 20px;
+}
+
+.quick-links {
+    margin-top: 15px;
+}
+
+.quick-links .button {
+    margin-right: 10px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.stat-box {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2em;
+    font-weight: 600;
+    color: #0073aa;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.getting-started-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.step {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    background: #0073aa;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.step h3 {
+    margin: 0 0 10px;
+    color: #23282d;
+    font-size: 1.1em;
+}
+
+.step p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 782px) {
+    .stats-grid,
+    .getting-started-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .quick-links .button {
+        display: block;
+        margin: 0 0 10px;
+        text-align: center;
+    }
+}
+
+/* Tab Styles */
+.nav-tab-wrapper {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0;
+    margin-top: 20px;
+}
+
+.nav-tab {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 10px 15px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    border-radius: 4px 4px 0 0;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.nav-tab:hover {
+    background: #e0e0e0;
+    color: #000;
+}
+
+.nav-tab.nav-tab-active {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    color: #0073aa;
+}
+
+.tab-content-wrapper {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+}
+
+.tab-pane {
+    display: none; /* Hide all tab panes by default */
+}
+
+.tab-pane.active {
+    display: block !important; /* Show only the active tab pane */
+}
+
+.perfume-advisor-questions .questions-list,
+.perfume-advisor-questions .add-question-form {
+    width: 100%; /* Ensure full width within the tab content */
+    float: none; /* Remove float if any */
+}
+
+.perfume-advisor-questions .add-question-form form {
+    max-width: 600px; /* Limit form width for better appearance */
+}
+
+/* RTL Adjustments for Tabs */
+.wrap[dir="rtl"] .nav-tab {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.wrap[dir="rtl"] .nav-tab:last-child {
+    margin-left: 0;
+}
+
+.wrap[dir="rtl"] .nav-tab.nav-tab-active {
+    border-bottom: 1px solid #fff;
+}
+
+.initial-hidden {
+    display: none;
+}
+
+.perfume-advisor-help .help-content ul,
+.perfume-advisor-help .help-content ol {
+    margin: 0 0 1em;
+    padding-right: 20px;
+}
+
+.perfume-advisor-help .help-content li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.perfume-advisor-help .help-content code {
+    background: #f1f1f1;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.perfume-advisor-help .help-content strong {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 782px) {
+    .perfume-advisor-help .help-section h2 {
+        font-size: 1.1em;
+    }
+    
+    .perfume-advisor-help .help-content {
+        padding: 15px;
+    }
+    
+    .perfume-advisor-help .help-content h3 {
+        font-size: 1.1em;
+    }
+}
+
+/* Dashboard Styles */
+.perfume-advisor-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.dashboard-section h2 {
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.dashboard-section > div {
+    margin-bottom: 15px;
+}
+
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.quick-links .button {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    text-align: center;
+}
+
+.stat-box {
+    background: #f8f9fa;
+    border: 1px solid #e2e4e7;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.stat-number {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #3498db;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.getting-started-steps {
+    display: grid;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.step-number {
+    background-color: #3498db;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #23282d;
+}
+
+.step p {
+    margin: 5px 0 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 782px) {
+    .stats-grid,
+    .getting-started-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .quick-links .button {
+        flex-basis: 100%;
+    }
+}
+
+/* Admin Tabs */
+.nav-tab-wrapper {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c3c4c7;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.nav-tab {
+    color: #23282d;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: 1px solid #c3c4c7;
+    border-bottom: none;
+    background: #f0f0f1;
+    display: inline-block;
+    margin-bottom: -1px; /* Overlap border */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-decoration: none;
+}
+
+.nav-tab:hover {
+    color: #007cba;
+    background: #fff;
+}
+
+.nav-tab.nav-tab-active {
+    color: #007cba;
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.tab-content-wrapper {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Specific styles for questions list/add form */
+.perfume-advisor-questions .questions-list,
+.perfume-advisor-questions .add-question-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.perfume-advisor-questions .add-question-form form {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* RTL Adjustments */
+.wrap[dir="rtl"] .nav-tab {
+    border-top-left-radius: 0;
+    border-top-right-radius: 3px;
+}
+
+.wrap[dir="rtl"] .nav-tab:last-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 0;
+}
+
+.wrap[dir="rtl"] .nav-tab.nav-tab-active {
+    border-bottom: 1px solid #fff;
+}
+
+/* Questions Management Styles */
+.perfume-advisor-questions-wrap {
+    margin: 20px 0;
+}
+
+/* Questions Grid */
+.questions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.question-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.question-card:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.question-header {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.question-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.question-actions .button {
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-actions .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.question-content {
+    padding: 15px;
+}
+
+.question-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #50575e;
+    font-size: 13px;
+}
+
+.question-meta:last-child {
+    margin-bottom: 0;
+}
+
+.question-meta .dashicons {
+    color: #2271b1;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Add/Edit Question Form */
+.question-form-container {
+    max-width: 800px;
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.form-section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.form-section h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #1d2327;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group select[multiple] {
+    height: 120px;
+}
+
+.form-actions {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    gap: 10px;
+}
+
+/* Select2 Customization */
+.select2-container {
+    max-width: 400px !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border-color: #8c8f94;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* RTL Specific Adjustments */
+[dir="rtl"] .question-actions {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .form-actions {
+    flex-direction: row-reverse;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 782px) {
+    .questions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .question-form-container {
+        padding: 15px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group select,
+    .select2-container {
+        max-width: 100% !important;
+    }
+}
+
+/* Questions Matching Page Styles */
+.perfume-advisor-questions-matching {
+    margin-top: 20px;
+}
+
+.question-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.question-section h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    color: #23282d;
+}
+
+.question-section .notice {
+    margin: 10px 0;
+}
+
+.question-section table {
+    margin: 15px 0;
+}
+
+.question-section td {
+    vertical-align: middle;
+}
+
+.add-matching-rule {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+/* RTL Support for Questions Matching */
+[dir="rtl"] .question-section h3 {
+    text-align: right;
+}
+
+[dir="rtl"] .question-section table th,
+[dir="rtl"] .question-section table td {
+    text-align: right;
+}
+
+[dir="rtl"] .add-matching-rule {
+    text-align: right;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 782px) {
+    .question-section {
+        padding: 15px;
+    }
+    
+    .question-section table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .question-section td {
+        white-space: nowrap;
+    }
+} 

@@ -1,0 +1,347 @@
+/* Perfume Advisor Form Styles */
+.perfume-advisor-form-wrapper {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+}
+
+.perfume-advisor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background: #f8f9fa;
+    padding: 1.5em;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-group:hover {
+    background: #f1f3f5;
+    transform: translateY(-2px);
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: right;
+    font-size: 1.1em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    padding: 1em;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1em;
+    width: 100%;
+    font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+    text-align: right;
+    direction: rtl;
+    transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+    outline: none;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5em;
+    flex-direction: row-reverse;
+    padding: 0.5em 0;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: normal;
+    flex-direction: row-reverse;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.radio-group label:hover {
+    background: #e9ecef;
+}
+
+.radio-group input[type="radio"] {
+    width: 1.2em;
+    height: 1.2em;
+    cursor: pointer;
+}
+
+.price-range .price-inputs {
+    display: flex;
+    gap: 1em;
+    flex-direction: row-reverse;
+}
+
+.price-range input {
+    flex: 1;
+}
+
+.submit-button {
+    background: #4CAF50;
+    color: white;
+    padding: 1.2em 2em;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.submit-button:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Recommendations Styles */
+.perfume-recommendations {
+    margin-top: 3em;
+    font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+}
+
+.perfume-recommendations h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #2c3e50;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2em;
+    padding: 1em;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-thumbnail {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-thumbnail img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 1.5em;
+}
+
+.product-title {
+    margin: 0 0 0.5em;
+    font-size: 1.2em;
+    text-align: right;
+    line-height: 1.4;
+}
+
+.product-title a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.product-title a:hover {
+    color: #4CAF50;
+}
+
+.product-price {
+    font-size: 1.3em;
+    color: #4CAF50;
+    margin-bottom: 1em;
+    text-align: right;
+    font-weight: 700;
+}
+
+.product-meta {
+    margin-bottom: 1.5em;
+}
+
+.product-attribute {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    background: #f8f9fa;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+.attribute-label {
+    color: #6c757d;
+    font-weight: 600;
+}
+
+.attribute-value {
+    color: #2c3e50;
+}
+
+.product-actions {
+    display: flex;
+    gap: 1em;
+    flex-direction: row-reverse;
+}
+
+.product-actions .button {
+    flex: 1;
+    text-align: center;
+    padding: 1em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+    font-weight: 600;
+}
+
+.product-actions .button:first-child {
+    background: #f8f9fa;
+    color: #2c3e50;
+}
+
+.product-actions .button:first-child:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+}
+
+.product-actions .add_to_cart_button {
+    background: #4CAF50;
+    color: white;
+}
+
+.product-actions .add_to_cart_button:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Error Message */
+.error {
+    background: #fff3f3;
+    color: #dc3545;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    text-align: right;
+    border-right: 4px solid #dc3545;
+}
+
+/* No Products Found Message */
+.no-products-found {
+    text-align: center;
+    padding: 3em;
+    background: #f8f9fa;
+    border-radius: 12px;
+    color: #6c757d;
+    font-size: 1.1em;
+    margin: 2em 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .perfume-advisor-form-wrapper {
+        padding: 1em;
+        margin: 1em;
+    }
+    
+    .products {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5em;
+    }
+    
+    .product-actions {
+        flex-direction: column;
+    }
+    
+    .product-thumbnail {
+        height: 200px;
+    }
+}
+
+/* RTL Specific Adjustments */
+[dir="rtl"] .form-group label {
+    text-align: right;
+}
+
+[dir="rtl"] .radio-group {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .price-range .price-inputs {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .product-actions {
+    flex-direction: row-reverse;
+}
+
+/* Persian Font Loading */
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} 

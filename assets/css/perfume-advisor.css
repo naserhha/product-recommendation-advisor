@@ -1,0 +1,691 @@
+/* Perfume Advisor Form Styles */
+.perfume-advisor-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.perfume-advisor-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.form-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2em;
+}
+
+.perfume-advisor-form .form-group {
+    margin-bottom: 20px;
+}
+
+.perfume-advisor-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.perfume-advisor-form input[type="text"],
+.perfume-advisor-form input[type="number"],
+.perfume-advisor-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.perfume-advisor-form .radio-option,
+.perfume-advisor-form .checkbox-option {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.perfume-advisor-form .radio-option:hover,
+.perfume-advisor-form .checkbox-option:hover {
+    background: #f9f9f9;
+}
+
+.perfume-advisor-form .radio-option label,
+.perfume-advisor-form .checkbox-option label {
+    display: inline-block;
+    margin-left: 8px;
+    font-weight: normal;
+}
+
+.related-products {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.related-products .product-item {
+    display: inline-block;
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.related-products .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.related-products .product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.related-products .product-item h4 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.related-products .product-item .price {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.perfume-advisor-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.perfume-advisor-form button[type="submit"]:hover {
+    background: #005177;
+}
+
+.perfume-advisor-notice {
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #f8f8f8;
+    border-left: 4px solid #0073aa;
+    border-radius: 4px;
+}
+
+.perfume-advisor-notice p {
+    margin: 0;
+    color: #666;
+}
+
+/* Recommendations Styles */
+.perfume-advisor-recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2em;
+    margin: 2em 0;
+}
+
+.recommendation-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.recommendation-item:hover {
+    transform: translateY(-4px);
+}
+
+.recommendation-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recommendation-content {
+    padding: 1.5em;
+}
+
+.recommendation-title {
+    margin: 0 0 0.5em;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.recommendation-price {
+    color: #2ecc71;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.recommendation-reason {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.recommendation-actions {
+    display: flex;
+    gap: 1em;
+}
+
+/* RTL Support */
+[dir="rtl"] .form-group label {
+    text-align: right;
+}
+
+[dir="rtl"] .radio-option input[type="radio"],
+[dir="rtl"] .checkbox-option input[type="checkbox"] {
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+[dir="rtl"] select.form-control {
+    background-position: right 1em center;
+    padding-right: 2.5em;
+    padding-left: 1em;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .perfume-advisor-form {
+        padding: 1em;
+    }
+    
+    .perfume-advisor-recommendations {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1em;
+    }
+    
+    .recommendation-image {
+        height: 150px;
+    }
+    
+    .recommendation-content {
+        padding: 1em;
+    }
+}
+
+/* Loading State */
+.perfume-advisor-loading {
+    text-align: center;
+    padding: 2em;
+}
+
+.perfume-advisor-loading:after {
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: perfume-advisor-spin 1s linear infinite;
+}
+
+@keyframes perfume-advisor-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Form Container */
+.perfume-advisor-form-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.perfume-advisor-form-container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Header */
+.perfume-advisor-form-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.perfume-advisor-form-header h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.perfume-advisor-form-header p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Form Groups */
+.perfume-advisor-form-group {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.perfume-advisor-form-group:hover {
+    background: #f0f2f5;
+    transform: translateY(-2px);
+}
+
+.perfume-advisor-form-group label {
+    display: block;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.perfume-advisor-form-group label .required {
+    color: #e74c3c;
+    margin-right: 4px;
+}
+
+/* Form Controls */
+.perfume-advisor-form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+.perfume-advisor-form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    outline: none;
+}
+
+/* Radio and Checkbox Options */
+.perfume-advisor-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.perfume-advisor-option {
+    position: relative;
+    padding: 1rem;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.perfume-advisor-option:hover {
+    border-color: #3498db;
+    transform: translateY(-2px);
+}
+
+.perfume-advisor-option input[type="radio"],
+.perfume-advisor-option input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.perfume-advisor-option label {
+    display: block;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.perfume-advisor-option input[type="radio"]:checked + label,
+.perfume-advisor-option input[type="checkbox"]:checked + label {
+    color: #3498db;
+}
+
+.perfume-advisor-option input[type="radio"]:checked ~ .perfume-advisor-option,
+.perfume-advisor-option input[type="checkbox"]:checked ~ .perfume-advisor-option {
+    border-color: #3498db;
+    background: rgba(52, 152, 219, 0.1);
+}
+
+/* Select Dropdown */
+.perfume-advisor-form-control[type="select"] {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232c3e50' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+    padding-right: 45px;
+}
+
+/* Submit Button */
+.perfume-advisor-submit {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto 0;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.perfume-advisor-submit:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.perfume-advisor-submit:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Error States */
+.perfume-advisor-form-group.has-error {
+    border-color: #e74c3c;
+    background: rgba(231, 76, 60, 0.05);
+}
+
+.perfume-advisor-form-group.has-error label {
+    color: #e74c3c;
+}
+
+.perfume-advisor-form-group.has-error .perfume-advisor-form-control {
+    border-color: #e74c3c;
+}
+
+.perfume-advisor-form-group.has-error .error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Success Message */
+.perfume-advisor-success {
+    text-align: center;
+    padding: 2rem;
+    background: #2ecc71;
+    color: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.5s ease;
+}
+
+/* RTL Support */
+[dir="rtl"] .perfume-advisor-form-control[type="select"] {
+    background-position: left 15px center;
+    padding-left: 45px;
+    padding-right: 15px;
+}
+
+[dir="rtl"] .perfume-advisor-option label {
+    text-align: right;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .perfume-advisor-form-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .perfume-advisor-form-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .perfume-advisor-options {
+        grid-template-columns: 1fr;
+    }
+
+    .perfume-advisor-form-group {
+        padding: 1rem;
+    }
+
+    .perfume-advisor-submit {
+        max-width: 100%;
+    }
+}
+
+/* Recommendations Grid */
+.perfume-advisor-recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.perfume-advisor-product {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.perfume-advisor-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.perfume-advisor-product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.perfume-advisor-product-info {
+    padding: 1.5rem;
+}
+
+.perfume-advisor-product-title {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.perfume-advisor-product-price {
+    font-size: 1.1rem;
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.perfume-advisor-product-reason {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.perfume-advisor-product-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.perfume-advisor-add-to-cart,
+.perfume-advisor-view-product {
+    flex: 1;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.perfume-advisor-add-to-cart {
+    background: #3498db;
+    color: #ffffff;
+}
+
+.perfume-advisor-view-product {
+    background: #f8f9fa;
+    color: #2c3e50;
+}
+
+.perfume-advisor-add-to-cart:hover {
+    background: #2980b9;
+}
+
+.perfume-advisor-view-product:hover {
+    background: #e9ecef;
+}
+
+/* No Recommendations Message */
+.perfume-advisor-no-recommendations {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.perfume-advisor-no-recommendations p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.perfume-advisor-no-recommendations a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.perfume-advisor-no-recommendations a:hover {
+    text-decoration: underline;
+}
+
+/* Dedicated Page Styles */
+.perfume-advisor-page {
+    padding: 3rem 0;
+    background: #f8f9fa;
+    min-height: calc(100vh - 200px);
+}
+
+.perfume-advisor-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.perfume-advisor-page .perfume-advisor-form-container {
+    margin: 0 auto;
+}
+
+.perfume-advisor-page .perfume-advisor-form-header {
+    margin-bottom: 3rem;
+}
+
+.perfume-advisor-page .perfume-advisor-form-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.perfume-advisor-page .perfume-advisor-form-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 3px;
+}
+
+.perfume-advisor-page .perfume-advisor-form-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* RTL Support for Page */
+[dir="rtl"] .perfume-advisor-page .perfume-advisor-form-header h2::after {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+/* Responsive Styles for Page */
+@media (max-width: 768px) {
+    .perfume-advisor-page {
+        padding: 2rem 0;
+    }
+
+    .perfume-advisor-page .perfume-advisor-form-header h2 {
+        font-size: 2rem;
+    }
+
+    .perfume-advisor-page .perfume-advisor-form-header p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .related-products .product-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .related-products .product-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+} 
