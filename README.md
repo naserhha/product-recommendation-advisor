@@ -22,6 +22,15 @@ A powerful WordPress plugin for WooCommerce that helps customers find the perfec
 * WooCommerce 3.0 or higher
 * MySQL 5.6 or higher
 
+## Translation
+
+The plugin comes with full translation support:
+
+- English (default)
+- Persian (Farsi)
+
+You can add more translations by adding .po/.mo files to the `languages` directory.
+
 ## Installation
 
 1. Download the plugin zip file
@@ -132,10 +141,11 @@ For support, please:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Credits
-
-* Author: Mohammad Nasser Haji Hashemabad
+Developed by [Mohammad Nasser Haji Hashemabad](https://mohammadnasser.com) 
+* Author: محمد ناصر حاجی هاشم آباد Mohammad Nasser Haji Hashemabad
 * Email: info@mohammadnasser.com
 * Website: mohammadnasser.com
+
 
 ## Changelog
 
@@ -147,3 +157,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 * WooCommerce integration
 * Responsive design
 * Multi-language support
+
+## Links
+
+- [LinkedIn](https://ir.linkedin.com/in/nasserhaji)
+- [GitHub](https://github.com/nasserhaji)
+- [Website](https://mohammadnasser.com/)
+- [Product Quiz Repository](https://github.com/nasserhaji/product-recommendation-advisor)
